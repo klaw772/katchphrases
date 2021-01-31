@@ -1,8 +1,10 @@
+import React from "react";
+import { SoundboardContainer } from "./components/SoundboardContainer/SoundboardContainer";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>hi</p>
+        <SoundboardContainer />
       </header>
     </div>
   );
