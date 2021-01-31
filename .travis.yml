@@ -4,3 +4,5 @@ node_js:
 cache: yarn
 install:
   - yarn --frozen-lockfile
+test:
+  - yarn test
