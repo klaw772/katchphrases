@@ -8,7 +8,14 @@ export const KatButton = () => {
   };
   return (
     <div className="kat-button-container">
-      <img src={kat} className="kat-button" onClick={handleClick} alt="kat" />
+      <h1>Random Katchphrase!</h1>
+      <img
+        src={kat}
+        className="kat-button"
+        onClick={handleClick}
+        alt="kat"
+        data-testid="kat-button"
+      />
     </div>
   );
 };

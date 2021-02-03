@@ -1,11 +1,12 @@
 .kat-button {
-  width: 50%;
+  width: 10%;
   border-radius: 50%;
-  border: 1em solid navy;
+  border: 0.5em solid navy;
 }
 
 .kat-button-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }

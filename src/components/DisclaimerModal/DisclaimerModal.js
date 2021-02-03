@@ -18,7 +18,11 @@ export const DisclaimerModal = () => {
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>
+        <Button
+          variant="secondary"
+          onClick={handleClose}
+          data-testid="modal-close-button"
+        >
           Close
         </Button>
       </Modal.Footer>
