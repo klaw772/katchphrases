@@ -6,6 +6,8 @@ import { SoundboardButtonsContainer } from "../../components/SoundboardButtonsCo
 describe("SoundboardButtonsContainer", () => {
   it("renders", () => {
     const { getByText } = render(<SoundboardButtonsContainer />);
-    expect(getByText("hi")).toBeInTheDocument();
+    expect(
+      getByText("placeholder container to hold soundboard buttons")
+    ).toBeInTheDocument();
   });
 });
