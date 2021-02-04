@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
 import { Form } from "react-bootstrap";
-import { ThemeContext } from "../ThemeContext/ThemeContext";
+import { ThemeDispatchContext } from "../ThemeContext/ThemeContext";
 
 export const ThemeToggle = () => {
-  const [theme, setTheme] = useContext(ThemeContext);
+  const setTheme = useContext(ThemeDispatchContext);
   const [nightMode, setNightMode] = useState(false);
 
   const handleToggle = () => {

@@ -17,7 +17,7 @@ export const AppTheme = {
 };
 
 const App = () => {
-  const [theme] = useContext(ThemeContext);
+  const theme = useContext(ThemeContext);
   const currentTheme = AppTheme[theme];
   return (
     <div
