@@ -15,7 +15,7 @@ describe("SoundboardContainer", () => {
       <SoundboardContainer />
     );
     expect(getByText("Welcome to Katchphrases!")).toBeInTheDocument();
-    fireEvent.click(getByTestId("modal-close-button"));
+    await fireEvent.click(getByTestId("modal-close-button"));
     await wait(0);
     expect(queryByText("Welcome to Katchphrases!")).not.toBeInTheDocument();
   });
