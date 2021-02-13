@@ -1,23 +1,26 @@
 import React from "react";
 import { SoundboardButton } from "../SoundboardButton/SoundboardButton";
 import buttonsData from "./buttons.json";
+import { Row, Col } from "react-bootstrap";
 import "./SoundboardButtonsContainer.css";
 
 export const SoundboardButtonsContainer = () => {
   const buttons = buttonsData.buttons.map((button) => {
     return (
-      <SoundboardButton
-        key={button.katchphrase}
-        anecdote={button.katchphrase}
-      />
+      <Col
+        xs={12}
+        sm={6}
+        md={4}
+        lg={3}
+        key={`${button.katchphrase} column`}
+        className="soundboard-buttons-column"
+      >
+        <SoundboardButton
+          key={button.katchphrase}
+          anecdote={button.katchphrase}
+        />
+      </Col>
     );
   });
-  return (
-    <div
-      data-testid="soundboard-buttons-container"
-      className="soundboard-buttons-container"
-    >
-      {buttons}
-    </div>
-  );
+  return <Row data-testid="soundboard-buttons-container">{buttons}</Row>;
 };
